@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script> 
+    <script src="assets/js/scrollreveal.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="menu" id="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Inicio</a></li>
+            <li class="nav-item"><a href="#about">Sobre Mí</a></li>
+            <li class="nav-item"><a href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a href="#projects">Proyectos</a></li>
+            <li class="nav-item"><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <small>Full-Stack Developer</small>
+            <h1>Hola soy <br> <span class="name-highlight">Juan Arévalo _</span></h1>
+            <h3>Desarrollador y diseñador de software</h3>
+            <p class="lead">
+                Exploro y creo experiencias digitales elegantes. Me especializo en interfaces y soluciones
+                eficientes usando tecnologías web modernas.
+            </p>
+            <div>
+                <button class="button button-cv">Descargar CV <i class="bi bi-download"></i></button>
+                <a class="button" href="#projects">Ver Proyectos</a>
+                <a class="button" href="#contact">Contacto</a>
+            </div>
+        </div>
+        <div class="avatar" aria-hidden="true">
+            <img src="assets/img/profile-image-removebg-preview.png" alt="Foto de Juan Arévalo">
+        </div>
+    </header>
+
+    <article class="about-me" id="about">
+        <div class="about">
+            <h2 class="name-highlight">Sobre Mí</h2>
+            <h3>Ingeniero en Sistemas | Desarrollador Full Stack Jr. | Especialista en Soluciones de Gestión</h3>
+            <p>Soy un apasionado desarrollador de software con 4 años de experiencia 
+                y eficientes, utilizando tecnologías web modernas. Me especializo en el diseño 
+                en la industria. Mi enfoque se centra en crear soluciones digitales elegantes 
+                de interfaces intuitivas y en la implementación de funcionalidades robustas que
+                mejoran la experiencia del usuario. A lo largo de mi carrera, he trabajado en 
+                una variedad de proyectos, desde aplicaciones web hasta sistemas complejos, 
+                siempre buscando innovar y superar las expectativas.
+            </p>
+        </div>
+
+            <img src="assets/img/favicon2.png" alt="Logo de Juan Arevalo" class="about-avatar" aria-hidden="true">
+
+    </article>
+
+    <section id="skills" class="skills">
+        <h2 class="name-highlight">Habilidades Técnicas</h2>
+        <div class="skills-list">
+            <div class="skill-card">
+                <h3><i class="bi bi-filetype-html"></i> HTML</h3>
+                <progress value="0" data-max="60" max="100"></progress>
+            </div>
+            <div class="skill-card">
+                <h3><i class="bi bi-css"></i> CSS</h3>
+                <progress value="0" data-max="50" max="100"></progress>
+            </div>
+            <div class="skill-card">
+                <h3><i class="bi bi-javascript"></i> JavaScript</h3>
+                <progress value="0" data-max="40" max="100"></progress>
+            </div>
+            <div class="skill-card">
+                <h3><i class="bi bi-filetype-php"></i> PHP</h3>
+                <progress value="0" data-max="50" max="100"></progress>
+            </div>
+            <div class="skill-card">
+                <h3><i class="bi bi-database"></i> MySQL</h3>
+                <progress value="0" data-max="60" max="100"></progress>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="name-highlight">Proyectos Destacados</h2>
+        <div class="project-list">
+            <div class="project-card" id="project1">
+                <img src="assets/img/control de asistencia.png" alt="Proyecto 1">
+                <h3>Sistema Integral de Gestión de Asistencia Biométrica</h3>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                </div>
+                <p>Desarrollo e implementación de una solución automatizada para el
+                    control de asistencia del personal. El proyecto resolvió 
+                    la brecha entre el registro físico y la gestión administrativa mediante 
+                    la integración directa de dispositivos biométricos con una 
+                    plataforma centralizada.
+                </p>
+                <a href="#" class="button-project">Ver Proyecto</a>
+            </div>
+            <div class="project-card" id="project2">
+                <img src="assets/img/project2.png" alt="Proyecto 2">
+                <h3>Portafolio Personal</h3>
+                <p>Un sitio web personal para mostrar mis habilidades, proyectos y experiencia profesional.</p>
+                <a href="#" class="button-project">Ver Proyecto</a>
+            </div>
+            <div class="project-card" id="project3">
+                <img src="assets/img/project3.png" alt="Proyecto 3">
+                <h3>Blog de Tecnología</h3>
+                <p>Una plataforma de blogging para compartir conocimientos y experiencias en el mundo de la tecnología.</p>
+                <a href="#" class="button-project">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="name-highlight">Contacto</h2>
+        <p>¿Interesado en colaborar o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+        <div class="contact-links">
+            <form action="https://formspree.io/f/xeepjakz" method="post">
+                <div>
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="button">Enviar Mensaje</button>
+            </form>
+            <div class="contact2">
+                <a href="https://github.com/juan-arevalo-dev" target="_blank" rel="noopener noreferrer" style="--color: #181717">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-arevalo-dev" target="_blank" rel="noopener noreferrer" style="--color: #0077b5">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="assets/js/menu_activo.js"></script>
+<script src="assets/js/animacion.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/lenis.js"></script>
+</html>
