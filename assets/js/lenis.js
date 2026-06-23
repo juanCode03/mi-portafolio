@@ -21,3 +21,5 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
+// Expose Lenis instance globally for other scripts to use
+window.lenis = lenis;

@@ -15,9 +15,25 @@ function setActiveLink(hash) {
 navLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
-    document.querySelector(link.hash)?.scrollIntoView({ behavior: "smooth" });
-    history.pushState(null, "", link.hash);
-    setActiveLink(link.hash);
+    const target = document.querySelector(link.hash);
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReduced) {
+      target?.scrollIntoView({ behavior: 'auto' });
+      history.pushState(null, "", link.hash);
+      setActiveLink(link.hash);
+      return;
+    }
+
+    if (window.lenis && typeof window.lenis.scrollTo === 'function') {
+      window.lenis.scrollTo(target);
+      history.pushState(null, "", link.hash);
+      setActiveLink(link.hash);
+    } else {
+      target?.scrollIntoView({ behavior: "smooth" });
+      history.pushState(null, "", link.hash);
+      setActiveLink(link.hash);
+    }
   });
 });
 

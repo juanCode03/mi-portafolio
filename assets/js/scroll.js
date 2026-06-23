@@ -30,5 +30,3 @@ window.sr = ScrollReveal();
         interval: 200,
         scale: 0.95
     });
-
-    mobile: true;

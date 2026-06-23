@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://google.com');
-@import 'lenis/dist/lenis.css';
 
 html {
     scroll-behavior: auto !important;
@@ -166,10 +164,10 @@ nav ul li a {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 480px;
+    grid-template-columns: 1fr minmax(280px, 480px);
     align-items: center;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 clamp(16px, 5vw, 150px);
 }
 
 @keyframes fadeIn {
@@ -221,11 +219,11 @@ nav ul li a {
 
 .about-me{
     display: grid;
-    grid-template-columns: 1fr 480px;
+    grid-template-columns: 1fr minmax(280px, 480px);
     align-items: center;
     height: 100vh;
     /* gap: 50px; */
-    padding: 0 150px;
+    padding: 0 clamp(16px, 5vw, 150px);
 }
 
 .about-me small{
@@ -244,8 +242,9 @@ nav ul li a {
 }
 
 .about-avatar {
-    width: 480px;
-    height: 480px;
+    max-width: 480px;
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
     display:flex;
@@ -257,7 +256,7 @@ nav ul li a {
 }
 
 .skills {
-    padding: 0 150px; 
+    padding: 0 clamp(16px, 5vw, 150px); 
     height: 100vh;
     display:flex;
     flex-direction: column;
@@ -315,7 +314,7 @@ progress::-moz-progress-bar {
 }
 
 .projects {
-    padding: 0 150px;
+    padding: 0 clamp(16px, 5vw, 150px);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -386,7 +385,7 @@ progress::-moz-progress-bar {
 
 /* Contacto */
 .contact {
-    padding: 0 150px;
+    padding: 0 clamp(16px, 5vw, 150px);
     height: 100vh;
     display:flex;
     flex-direction: column;
@@ -426,7 +425,7 @@ progress::-moz-progress-bar {
 
 .contact-links {
     display: flex;
-    gap: 400px;
+    gap: clamp(16px, 6vw, 120px);
     align-items: center;
 }
 
