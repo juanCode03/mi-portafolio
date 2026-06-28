@@ -467,9 +467,68 @@ progress::-moz-progress-bar {
 
 /* Pagina de Proyectos */
 
+.hero-asis {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 50px 200px;
+}
+
+.hero-asis .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-asis .hero-content small {
+    color: #39a0ff;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.hero-asis .hero-content .project-meta {
+    color: #9aa6af;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    margin-top: -6px;
+}
+
+.hero-asis .content-info {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin: 10px 0 0;
+}
+
+.hero-asis .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-asis .lead,
+.hero-asis .list {
+    margin: 0;
+}
+
+.list {
+    color: #9aa6af;
+    padding-left: 20px;
+}
+
+.list .title {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+}
+
 .project-title {
     font-size: 3rem;
-    margin: 20px 0;
     text-align: center;
     color: #39a0ff;
 }
@@ -584,6 +643,31 @@ progress::-moz-progress-bar {
         grid-template-columns: 1fr;
         padding: 30px 20px;
         gap: 30px;
+    }
+
+    .hero-asis {
+        padding: 30px 20px;
+    }
+
+    .hero-asis .content-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-asis .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-asis .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .list {
+        padding-left: 16px;
     }
 }
 
