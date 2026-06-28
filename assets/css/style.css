@@ -313,6 +313,23 @@ progress::-moz-progress-bar {
     border-radius: 10px;
 }
 
+.certificado-skills {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a1a1d;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(57,160,255,0.15);
+    max-width: 520px;
+}
+
+.certificado-skills img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 12px 0;
+    display: block;
+}
+
 .projects {
     padding: 0 clamp(16px, 5vw, 150px);
     min-height: 100vh;
@@ -478,19 +495,6 @@ progress::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-.hero-asis .hero-content small {
-    color: #39a0ff;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
-}
-
-.hero-asis .hero-content .project-meta {
-    color: #9aa6af;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    margin-top: -6px;
 }
 
 .hero-asis .content-info {
